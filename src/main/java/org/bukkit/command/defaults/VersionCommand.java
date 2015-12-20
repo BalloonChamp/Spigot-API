@@ -18,7 +18,7 @@ public class VersionCommand extends BukkitCommand {
     public VersionCommand(String name) {
         super(name);
 
-        this.description = "Gets the version of this server including any plugins in use";
+        this.description = "Gets the version of this server including any addons in use";
         this.usageMessage = "/version [plugin name]";
         this.setPermission("bukkit.command.version");
         this.setAliases(Arrays.asList("ver", "about"));
@@ -58,8 +58,8 @@ public class VersionCommand extends BukkitCommand {
             }
 
             if (!found) {
-                sender.sendMessage("This server is not running any plugin by that name.");
-                sender.sendMessage("Use /plugins to get a list of plugins.");
+                sender.sendMessage("This server is not running any addon by that name.");
+                sender.sendMessage("Use /addons to get a list of addons.");
             }
         }
         return true;
