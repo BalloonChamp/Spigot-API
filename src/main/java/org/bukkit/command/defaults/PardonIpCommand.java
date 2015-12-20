@@ -14,9 +14,9 @@ import com.google.common.collect.ImmutableList;
 
 public class PardonIpCommand extends VanillaCommand {
     public PardonIpCommand() {
-        super("pardon-ip");
+        super("unbanip");
         this.description = "Allows the specified IP address to use this server";
-        this.usageMessage = "/pardon-ip <address>";
+        this.usageMessage = "/unbanip <address>";
         this.setPermission("bukkit.command.unban.ip");
     }
 
