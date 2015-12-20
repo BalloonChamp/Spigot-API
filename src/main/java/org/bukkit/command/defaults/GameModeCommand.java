@@ -15,12 +15,12 @@ import org.bukkit.util.StringUtil;
 import com.google.common.collect.ImmutableList;
 
 public class GameModeCommand extends VanillaCommand {
-    private static final List<String> GAMEMODE_NAMES = ImmutableList.of("adventure", "creative", "survival");
+    private static final List<String> GAMEMODE_NAMES = ImmutableList.of("a", "c", "s");
 
     public GameModeCommand() {
-        super("gamemode");
+        super("gm");
         this.description = "Changes the player to a specific game mode";
-        this.usageMessage = "/gamemode <mode> [player]";
+        this.usageMessage = "/gm <mode (a, c, or s)> [player]";
         this.setPermission("bukkit.command.gamemode");
     }
 
