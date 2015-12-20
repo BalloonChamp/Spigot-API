@@ -10,10 +10,10 @@ import org.bukkit.plugin.Plugin;
 public class PluginsCommand extends BukkitCommand {
     public PluginsCommand(String name) {
         super(name);
-        this.description = "Gets a list of plugins running on the server";
-        this.usageMessage = "/plugins";
+        this.description = "Gets a list of addons running on the server";
+        this.usageMessage = "/addons";
         this.setPermission("bukkit.command.plugins");
-        this.setAliases(Arrays.asList("pl"));
+        this.setAliases(Arrays.asList("addons"));
     }
 
     @Override
