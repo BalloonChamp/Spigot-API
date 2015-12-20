@@ -1,4 +1,4 @@
-Spigot-API
+BalloonSpigot
 ======
 
 A Minecraft Server API.
